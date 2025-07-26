@@ -70,6 +70,7 @@ Mansi,Mane,24,B-202,Mumbai,Maharashtra,female
 
    Upload and process the CSV
    Visit this URL in your browser :
+   
    http://localhost:3000/upload
 
     It will:
@@ -89,8 +90,13 @@ Mansi,Mane,24,B-202,Mumbai,Maharashtra,female
 
 
 🔍 Assumptions
+    
     First row of the CSV is the header
+    
     Fields name.firstName, name.lastName, and age are always present
+    
     Dot-separated keys are converted into nested JSON
+    
     All fields starting with address. are grouped under the address field
+    
     All other extra fields go under additional_info
