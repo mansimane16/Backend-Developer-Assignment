@@ -70,6 +70,7 @@ Print the age distribution report to the console
 📊 Age Group Report Output (in terminal)
 
 📊 Age Group Distribution Report:
+
 <img width="350" height="298" alt="image" src="https://github.com/user-attachments/assets/0e72332c-6b0e-49e1-8f64-9d81759a3367" />
 
 
