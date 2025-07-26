@@ -29,49 +29,56 @@ Mansi,Mane,24,B-202,Mumbai,Maharashtra,female
 🛠️ Setup Instructions
 
 1. Clone the repository
-git clone [https://github.com/mansimane16/Backend-Developer-Assignment.git]
 
-mkdir csv-to-json-api
+   git clone [https://github.com/mansimane16/Backend-Developer-Assignment.git]
 
-cd csv-to-json-api
+   mkdir csv-to-json-api
 
-3. Install dependencies
+   cd csv-to-json-api
 
-npm install
+2. Install dependencies
 
-4. Configure environment
+   npm install
 
-Create a .env file (use .env.example as reference):
+3. Configure environment
 
-PORT=3000
+   Create a .env file (use .env.example as reference):
 
-CSV_FILE_PATH=./data/users.csv
+   PORT=3000
 
-DB_URL=postgresql://postgres:yourpassword@localhost:5434/csvdb
+   CSV_FILE_PATH=./data/users.csv
+
+   DB_URL=postgresql://postgres:yourpassword@localhost:5434/csvdb
 
 4. Create PostgreSQL table
-Make sure PostgreSQL is running and execute the following:
+   
+   Make sure PostgreSQL is running and execute the following:
 
-CREATE TABLE IF NOT EXISTS users (
-    id SERIAL PRIMARY KEY,
-    "name" VARCHAR NOT NULL,
-    age INT NOT NULL,
-    address JSONB,
-    additional_info JSONB
-);
+   CREATE TABLE IF NOT EXISTS users (
+     id SERIAL PRIMARY KEY,
+     "name" VARCHAR NOT NULL,
+     age INT NOT NULL,
+     address JSONB,
+     additional_info JSONB
+ );
 
 🚀 How to Use
-Start the server
-npm run dev 
 
-Upload and process the CSV
-Visit this URL in your browser :
-http://localhost:3000/upload
+   Start the server
 
-It will:
-Parse the CSV file
-Transform and insert records into PostgreSQL
-Print the age distribution report to the console
+   npm run dev 
+
+   Upload and process the CSV
+   Visit this URL in your browser :
+   http://localhost:3000/upload
+
+    It will:
+    
+    Parse the CSV file
+    
+    Transform and insert records into PostgreSQL
+    
+    Print the age distribution report to the console
 
 📊 Age Group Report Output (in terminal)
 
@@ -82,8 +89,8 @@ Print the age distribution report to the console
 
 
 🔍 Assumptions
-First row of the CSV is the header
-Fields name.firstName, name.lastName, and age are always present
-Dot-separated keys are converted into nested JSON
-All fields starting with address. are grouped under the address field
-All other extra fields go under additional_info
+    First row of the CSV is the header
+    Fields name.firstName, name.lastName, and age are always present
+    Dot-separated keys are converted into nested JSON
+    All fields starting with address. are grouped under the address field
+    All other extra fields go under additional_info
