@@ -55,11 +55,17 @@ Mansi,Mane,24,B-202,Mumbai,Maharashtra,female
    Make sure PostgreSQL is running and execute the following:
 
    CREATE TABLE IF NOT EXISTS users (
-     id SERIAL PRIMARY KEY,
-     "name" VARCHAR NOT NULL,
-     age INT NOT NULL,
-     address JSONB,
-     additional_info JSONB
+
+   id SERIAL PRIMARY KEY,
+
+   "name" VARCHAR NOT NULL,
+
+   age INT NOT NULL,
+
+   address JSONB,
+
+   additional_info JSONB
+ 
  );
 
 🚀 How to Use
