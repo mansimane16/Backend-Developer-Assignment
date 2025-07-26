@@ -23,28 +23,20 @@ Mansi,Mane,24,B-202,Mumbai,Maharashtra,female
 
 📁 Project Structure
 
-csv-to-json-api/
-├── data/ → Sample CSV files
-│ └── users.csv
-├── src/
-│ ├── config/ → DB connection (PostgreSQL)
-│ ├── services/ → Upload to DB and age group reporting
-│ ├── utils/ → Custom CSV parser
-│ └── index.js → Main Express server
-├── .env.example → Environment variable template
-├── .gitignore
-├── README.md
+<img width="477" height="233" alt="image" src="https://github.com/user-attachments/assets/2ae9ea79-879d-4b95-a8f0-28ef153b4e35" />
+
 
 🛠️ Setup Instructions
 
 1. Clone the repository
-git clone https://github.com/mansimane16/csv-to-json-api.git
+git clone [https://github.com/mansimane16/Backend-Developer-Assignment.git]
+mkdir csv-to-json-api
 cd csv-to-json-api
 
-2. Install dependencies
+3. Install dependencies
 npm install
 
-3. Configure environment
+4. Configure environment
 Create a .env file (use .env.example as reference):
 
 PORT=3000
@@ -78,14 +70,9 @@ Print the age distribution report to the console
 📊 Age Group Report Output (in terminal)
 
 📊 Age Group Distribution Report:
-+-----------+------------+
-| Age Group | Percentage |
-+-----------+------------+
-| <20       | 20.00%     |
-| 20-40     | 50.00%     |
-| 40-60     | 20.00%     |
-| >60       | 10.00%     |
-+-----------+------------+
+<img width="350" height="298" alt="image" src="https://github.com/user-attachments/assets/0e72332c-6b0e-49e1-8f64-9d81759a3367" />
+
+
 
 🔍 Assumptions
 First row of the CSV is the header
