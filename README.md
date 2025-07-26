@@ -18,7 +18,9 @@ This project reads a CSV file, parses it into nested JSON objects (without using
 🧪 Sample CSV Format
 
 name.firstName,name.lastName,age,address.line1,address.city,address.state,gender
+
 Rohit,Prasad,35,A-563,Pune,Maharashtra,male
+
 Mansi,Mane,24,B-202,Mumbai,Maharashtra,female
 
 📁 Project Structure
@@ -30,62 +32,63 @@ Mansi,Mane,24,B-202,Mumbai,Maharashtra,female
 
 1. Clone the repository
 
-   git clone [https://github.com/mansimane16/Backend-Developer-Assignment.git]
+         git clone [https://github.com/mansimane16/Backend-Developer-Assignment.git]
 
-   mkdir csv-to-json-api
+         mkdir csv-to-json-api
 
-   cd csv-to-json-api
+         cd csv-to-json-api
 
 2. Install dependencies
 
-   npm install
+         npm install
 
 3. Configure environment
 
-   Create a .env file (use .env.example as reference):
+         Create a .env file (use .env.example as reference):
 
-   PORT=3000
+         PORT=3000
 
-   CSV_FILE_PATH=./data/users.csv
+         CSV_FILE_PATH=./data/users.csv
 
-   DB_URL=postgresql://postgres:yourpassword@localhost:5434/csvdb
+         DB_URL=postgresql://postgres:yourpassword@localhost:5434/csvdb
 
 4. Create PostgreSQL table
    
    Make sure PostgreSQL is running and execute the following:
 
-   CREATE TABLE IF NOT EXISTS users (
+         CREATE TABLE IF NOT EXISTS users (
 
-   id SERIAL PRIMARY KEY,
+         id SERIAL PRIMARY KEY,
 
-   "name" VARCHAR NOT NULL,
+         "name" VARCHAR NOT NULL,
 
-   age INT NOT NULL,
+         age INT NOT NULL,
 
-   address JSONB,
+         address JSONB,
 
-   additional_info JSONB
+         additional_info JSONB
  
- );
+       );
 
 🚀 How to Use
 
-Start the server
+   Start the server
 
-   npm run dev 
+      npm run dev 
 
-Upload and process the CSV
-Visit this URL in your browser :
+   Upload and process the CSV
    
-   http://localhost:3000/upload
+   Visit this URL in your browser :
+   
+      http://localhost:3000/upload
 
 It will:
     
-    Parse the CSV file
+Parse the CSV file
     
-    Transform and insert records into PostgreSQL
+Transform and insert records into PostgreSQL
     
-    Print the age distribution report to the console
+Print the age distribution report to the console
 
 📊 Age Group Report Output (in terminal)
 
@@ -97,12 +100,12 @@ It will:
 
 🔍 Assumptions
     
-    First row of the CSV is the header
+   -First row of the CSV is the header
     
-    Fields name.firstName, name.lastName, and age are always present
+   -Fields name.firstName, name.lastName, and age are always present
     
-    Dot-separated keys are converted into nested JSON
+   -Dot-separated keys are converted into nested JSON
     
-    All fields starting with address. are grouped under the address field
+   -All fields starting with address. are grouped under the address field
     
-    All other extra fields go under additional_info
+   -All other extra fields go under additional_info
