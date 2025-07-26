@@ -30,17 +30,23 @@ Mansi,Mane,24,B-202,Mumbai,Maharashtra,female
 
 1. Clone the repository
 git clone [https://github.com/mansimane16/Backend-Developer-Assignment.git]
+
 mkdir csv-to-json-api
+
 cd csv-to-json-api
 
 3. Install dependencies
+
 npm install
 
 4. Configure environment
+
 Create a .env file (use .env.example as reference):
 
 PORT=3000
+
 CSV_FILE_PATH=./data/users.csv
+
 DB_URL=postgresql://postgres:yourpassword@localhost:5434/csvdb
 
 4. Create PostgreSQL table
