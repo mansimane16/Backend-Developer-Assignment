@@ -38,7 +38,7 @@ csv-to-json-api/
 🛠️ Setup Instructions
 
 1. Clone the repository
-git clone https://github.com/your-username/csv-to-json-api.git
+git clone https://github.com/mansimane16/csv-to-json-api.git
 cd csv-to-json-api
 
 2. Install dependencies
