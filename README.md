@@ -70,16 +70,16 @@ Mansi,Mane,24,B-202,Mumbai,Maharashtra,female
 
 🚀 How to Use
 
-   Start the server
+Start the server
 
    npm run dev 
 
-   Upload and process the CSV
-   Visit this URL in your browser :
+Upload and process the CSV
+Visit this URL in your browser :
    
    http://localhost:3000/upload
 
-    It will:
+It will:
     
     Parse the CSV file
     
